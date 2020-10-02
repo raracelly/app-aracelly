@@ -25,7 +25,7 @@ public class Cliente {
 	@Column(name = "direccion",nullable = false, length = 70)
 	private String direccionCliente;
 	
-	@Size(min = 3, message = "Telefono debe tener 9 digitos")
+	@Size(min = 9, max = 9, message = "Teléfono debe tener 9 digitos")
 	@Column(name = "telefono",nullable = false, length = 9)
 	private int telefonoCliente;
 
